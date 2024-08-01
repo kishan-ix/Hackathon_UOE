@@ -1,0 +1,31 @@
+// default font family
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.36.0/tabler-icons.min.css');
+
+// default root
+
+:root {
+	--body-font: 'Lexend', sans-serif;
+	--roboto-font: 'Roboto', sans-serif;
+
+	--transition: all 0.5s ease-in-out;
+	--transition2: all 0.3s ease-in-out;
+	--animate-duration: 1s;
+	--animate-delay: 0.5s;
+
+	--p1: 188, 231, 12;
+	--p2: 188, 231, 12;
+	--p3: 245, 149, 113;
+	--p4: 11, 11, 18;
+	--p5: 40, 51, 10;
+	--p6: 255, 255, 255;
+	--p7: 40, 61, 31;
+	--p8: 199, 248, 1;
+	--p9: 53, 71, 36;
+	--s1: 235, 235, 236;
+	--s2: 121, 143, 29;
+	--gradient-p1: linear-gradient(180deg, rgba(199, 248, 1, 0.65) 0%, rgba(250, 205, 149, 0.65) 100%);
+	--gradient-p2: linear-gradient(270deg, #C7F801 6.51%, #FACD95 63.52%);
+	--gradient-p3: linear-gradient(180deg, rgba(188, 255, 164, 0.40) -2.24%, rgba(152, 216, 129, 0.25) 60.6%, rgba(90, 190, 54, 0.04) 100%);
+	--box-shadow-p1: 0px 0px 24px 0px rgba(0, 0, 0, 0.08);
+}

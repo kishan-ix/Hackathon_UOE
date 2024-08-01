@@ -1,0 +1,643 @@
+// Hero Section Starts
+.hero_area {
+    background-color: #364A2E;
+    background-image: url("../images/mainheroarea.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+
+    &__content {
+        span {
+            border-radius: 40px;
+            background: rgba(255, 255, 255, 0.10);
+        }
+
+        h1 {
+            background: linear-gradient(270deg, #C7F801 6.51%, #FACD95 63.52%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        &-btnone {
+            &:hover {
+                i {
+                    background: rgb(var(--p1));
+                    color: #384B2E;
+                }
+            }
+        }
+
+        &-btntwo {
+            color: rgb(var(--p6)) !important;
+
+            i {
+                color: #384B2E !important;
+            }
+
+            &:hover {
+                color: rgb(var(--p4)) !important;
+
+                i {
+                    background: rgb(var(--p4));
+                    color: rgb(var(--p6)) !important;
+                }
+            }
+        }
+    }
+
+    &__shape {
+        img {
+            top: -30%;
+            left: 0;
+            z-index: -1;
+
+            @include maxQuery(1499) {
+                top: -15%;
+            }
+
+            @include maxQuery(991) {
+                top: -10%;
+            }
+
+            @include maxQuery(768) {
+                top: 0;
+            }
+
+            @include maxQuery(480) {
+                top: 12%;
+            }
+        }
+    }
+
+    &__lishtone {
+        img {
+            top: -10%;
+            left: -10%;
+            z-index: -1;
+        }
+    }
+
+    &__lishttwo {
+        img {
+            top: 0;
+            right: 0;
+            z-index: -1;
+        }
+    }
+
+    &__backgroundrote {
+        height: 119.398px;
+        transform: rotate(1.368deg);
+        background: #798F1D;
+    }
+
+    &__sliders {
+        margin-top: -150px;
+        background: #BCE70C;
+        height: 119.398px;
+        transform: rotate(-3.639deg);
+        padding: 34.28px 299.616px 33.135px 299.024px;
+
+        @include maxQuery(768) {
+            padding: 10px;
+        }
+    }
+
+    // For countdown css
+    &__counter {
+        max-width: 87%;
+
+        @include maxQuery(1399) {
+            width: 100%;
+        }
+    }
+
+    &__countdown {
+        &-number {
+            span {
+                font-size: inherit;
+                font-weight: inherit;
+                color: inherit;
+            }
+        }
+    }
+
+    &__thumb {
+        &-style {
+            top: -10%;
+            right: -8%;
+
+            @include maxQuery(1399) {
+                top: -18%;
+                right: -10%;
+            }
+
+            @include maxQuery(991) {
+                width: 20%;
+            }
+            @include maxQuery(575) {
+                top: -18%;
+                right: -3%;
+            }
+        }
+    }
+}
+
+// Hero Section Ends
+// Brand Sliders Starts
+.brand_slider {
+    // background: linear-gradient(0deg, rgba(11, 11, 18, 1) 51%, rgba(56, 75, 46, 1) 51%);
+
+    .swiper-wrapper {
+        -webkit-transition-timing-function: linear !important;
+        -o-transition-timing-function: linear !important;
+        transition-timing-function: linear !important;
+    }
+}
+
+// Brand Sliders Ends
+// Explore Coinx Web3 Products Starts
+.web3_product {
+    &__item {
+        &-btn {
+            a {
+                &:hover {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+
+        &:hover {
+            .web3_product__item-btn {
+                a {
+                    background-color: rgb(var(--p1));
+
+                    i {
+                        color: rgb(var(--p4));
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Explore Coinx Web3 Products Ends
+//Markets Starts
+.market_more {
+    .singletab {
+        .tablinks {
+            .nav-links {
+                .tablink {
+                    transition: 0.5s linear;
+
+                    &:hover {
+                        color: rgba(var(--p1), 1);
+                        background: rgba(255, 255, 255, 0.20);
+                    }
+                }
+
+                .active {
+                    color: rgba(var(--p1), 1);
+                    background: rgba(255, 255, 255, 0.20);
+                }
+            }
+        }
+    }
+
+    &__item {
+        border-radius: 12px;
+        transition: 0.5s linear;
+
+        .imgstyle {
+            margin-left: -20px;
+        }
+
+        border: 1px solid rgba(var(--p6), 0.20);
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.20);
+            border: 1px solid transparent !important;
+
+            a {
+                background-color: rgb(var(--p1));
+                color: rgb(var(--p4));
+            }
+        }
+    }
+}
+
+//Markets Ends 
+// How to get started Starts
+.get_started {
+    background-color: #364A2E;
+    background-image: url("../images/howtoget-bg.png");
+    background-size: cover;
+
+    &__item {
+        height: 100%;
+        z-index: 0;
+        transition: 0.5s linear;
+
+        h4,
+        span,
+        button {
+            transition: 0.5s linear;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            border-radius: 20px;
+            width: 100%;
+            height: 0%;
+            left: 0;
+            top: -10%;
+            background: linear-gradient(270deg, #C7F801 6.51%, #FACD95 63.52%);
+            z-index: -1;
+            opacity: 0;
+            transition: 0.5s linear;
+        }
+
+        &:hover {
+            &::before {
+                content: "";
+                position: absolute;
+                border-radius: 20px;
+                width: 100%;
+                height: 120%;
+                left: 0;
+                top: -10%;
+                background: linear-gradient(270deg, #C7F801 6.51%, #FACD95 63.52%);
+                z-index: -1;
+                opacity: 1;
+            }
+
+            .get_started__item-icn {
+                background-color: rgba(var(--p4), 0.12);
+            }
+
+            h4,
+            span {
+                color: rgb(var(--p4));
+            }
+
+            button {
+                background: rgb(var(--p4));
+                border: 2px solid rgb(var(--p4));
+                color: rgb(var(--p6));
+            }
+        }
+    }
+}
+
+// How to get started Ends
+// Discover Web3 starts
+.discover_web3 {
+    &__title {
+        &-left {
+            h2 {
+                background: linear-gradient(270deg, #C7F801 6.51%, #FACD95 63.52%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+
+    &__part {
+        ul li {
+            button {
+                transition: 0.5s linear;
+
+                &:hover {
+                    color: rgb(var(--p1));
+                }
+            }
+        }
+    }
+    .tabitem{
+        &::-webkit-scrollbar {
+            height: 6px;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            background-color: #BCE70C;
+            border-radius: 2px;
+        }
+    
+        &::-webkit-scrollbar-track {
+            background-color: rgba(255, 255, 255, 0.16);
+        }
+    }
+}
+
+// Discover Web3 ends
+// Earn crypto flexibly Starts
+.earn_crypto {
+    background-color: #364A2E;
+    background-image: url("../images/earnandsaving.png");
+    background-size: cover;
+
+    &__rangeslider {
+
+        /* === range theme and appearance === */
+        input[type="range"] {
+            font-size: 1.5rem;
+            width: 12.5em;
+        }
+
+        input[type="range"] {
+            color: #BCE70C;
+            --thumb-height: 1.125em;
+            --track-height: 8px;
+            --track-color: rgba(255, 255, 255, 0.16);
+            --brightness-hover: 180%;
+            --brightness-down: 80%;
+            --clip-edges: 0.125em;
+        }
+
+
+        /* === range commons === */
+        input[type="range"] {
+            position: relative;
+            background: #fff0;
+            overflow: hidden;
+        }
+
+
+        /* /* === WebKit specific styles === */
+        input[type="range"],
+        input[type="range"]::-webkit-slider-runnable-track,
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            transition: all ease 100ms;
+            height: var(--thumb-height);
+        }
+
+
+        input[type="range"]::-webkit-slider-thumb {
+            --thumb-radius: calc((var(--thumb-height) * 0.5) - 1px);
+            border: 5px solid #BCE70C;
+            --clip-top: calc((var(--thumb-height) - var(--track-height)) * 0.5 - 0.5px);
+            --clip-bottom: calc(var(--thumb-height) - var(--clip-top));
+            --clip-further: calc(100% + 1px);
+            --box-fill: calc(-100vmax - var(--thumb-width, var(--thumb-height))) 0 0 100vmax currentColor;
+
+            width: var(--thumb-width, var(--thumb-height));
+            background: linear-gradient(#283D1F 0 0) scroll no-repeat left center / 50% calc(var(--track-height) + 1px);
+            background-color: #283D1F;
+            box-shadow: var(--box-fill);
+            border-radius: var(--thumb-width, var(--thumb-height));
+            filter: brightness(100%);
+            clip-path: polygon(100% -1px,
+                    var(--clip-edges) -1px,
+                    0 var(--clip-top),
+                    -100vmax var(--clip-top),
+                    -100vmax var(--clip-bottom),
+                    0 var(--clip-bottom),
+                    var(--clip-edges) 100%,
+                    var(--clip-further) var(--clip-further));
+        }
+
+        input[type="range"]::-webkit-slider-runnable-track {
+            background: linear-gradient(var(--track-color) 0 0) scroll no-repeat center / 100% calc(var(--track-height) + 1px);
+        }
+
+        // .slidecontainer {
+        //     width: 100%;
+        //     // overflow: hidden;
+        //     .range-style{
+        //         height: 10px;
+        //     }
+        //   } 
+        //     input{
+        //         padding: 10px;
+        //     }
+        //     input[type='range'] {
+        //     //   overflow: hidden;
+        //       height: 10px;
+        //       width: 100%;
+        //       -webkit-appearance: none;
+        //       background-color: rgba(255, 255, 255, 0.16);
+        //     }
+
+        //     input[type='range']::-webkit-slider-runnable-track {
+        //       height: 5px;
+        //       -webkit-appearance: none;
+        //       color: #13bba4;
+        //       width: 100%;
+        //       margin-top: -1px;
+        //     }
+
+        //     input[type='range']::-webkit-slider-thumb {
+        //       width: 8px;
+        //       -webkit-appearance: none;
+        //       height: 8px;
+        //       margin-top: -7px;
+        //       cursor: ew-resize;
+        //       background: #283D1F;
+        //       box-shadow: -320px 0 0 300px #BCE70C;
+        //     }
+        //     input[type='range']::-webkit-range-progress {
+        //         width: 10px;
+        //         -webkit-appearance: none;
+        //         height: 5px;
+        //         cursor: ew-resize;
+        //         background: #434343;
+        //         box-shadow: -80px 0 0 80px #43e5f7;
+        //       }
+
+
+        // /** FF*/
+        // input[type="range"]::-moz-range-progress {
+        //   background-color: #43e5f7; 
+        // }
+        // input[type="range"]::-moz-range-track {  
+        //   background-color: #9a905d;
+        // }
+        // /* IE*/
+        // input[type="range"]::-ms-fill-lower {
+        //   background-color: #43e5f7; 
+        // }
+        // input[type="range"]::-ms-fill-upper {  
+        //   background-color: #9a905d;
+        // }
+
+        //   .slider {
+        //     -webkit-appearance: none;
+        //     width: 100%;
+        //     height: 15px;
+        //     border-radius: 5px;
+        //     background: rgba(255, 255, 255, 0.16);
+        //     outline: none;
+        //     opacity: 1;
+        //     -webkit-transition: .2s;
+        //     transition: opacity .2s;
+        //   }
+
+        // //   .slider:hover {
+        // //     opacity: 1;
+        // //   }
+
+        //   .slider::-webkit-slider-thumb {
+        //     -webkit-appearance: none;
+        //     appearance: none;
+        //     width: 25px;
+        //     height: 25px;
+        //     border-radius: 50%;
+        //     background: #04AA6D;
+        //     cursor: pointer;
+        //   }
+
+        //   .slider::-moz-range-thumb {
+        //     width: 25px;
+        //     height: 25px;
+        //     border-radius: 50%;
+        //     background: #04AA6D;
+        //     cursor: pointer;
+        //   }
+    }
+
+    .earn_crypto__wrapper {
+        position: relative;
+    }
+
+    .earn_crypto__value {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    progress {
+        width: 100%;
+        height: 8px;
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.20);
+        transition: width 300ms ease;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #BCE70C;
+            left: 39%;
+            top: 10%;
+            border-radius: 100%;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background-color: #283D1F;
+            left: 39.8%;
+            top: 31%;
+            border-radius: 100%;
+
+            @include maxQuery(1199) {
+                left: 39.5%;
+            }
+
+            @include maxQuery(991) {
+                left: 39.7%;
+            }
+
+            @include maxQuery(768) {
+                left: 39.9%;
+            }
+
+            @include maxQuery(480) {
+                left: 40.5%;
+            }
+        }
+    }
+
+    progress[value]::-webkit-progress-bar {
+        width: 100%;
+        height: 8px;
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.20);
+        transition: width 300ms ease;
+    }
+
+    progress[value]::-webkit-progress-value {
+        width: 0;
+        border-radius: 50px;
+        background-color: #BCE70C;
+        transition: width 300ms ease;
+    }
+}
+
+// Earn crypto flexibly Ends
+// Trust and Security Starts
+.trust_security {
+    background-color: #283D1F;
+    background-image: url('../images/noisy-background6.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__title {
+        &-tstyle {
+            background: linear-gradient(270deg, #C7F801 6.51%, #FACD95 63.52%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    &__button {
+        @include maxQuery(1199) {
+            display: none;
+        }
+
+        @include maxQuery(991) {
+            display: block;
+        }
+
+        @include maxQuery(768) {
+            right: 20% !important;
+        }
+
+        @include maxQuery(575) {
+            right: 20% !important;
+        }
+
+        @include maxQuery(480) {
+            right: 1% !important;
+        }
+    }
+}
+
+// Trust and Security Ends
+// Your one-step shop Starts
+.one_stepshop {
+    background-color: #222712;
+
+    &__item {
+        height: 100%;
+        transition: 0.5s linear;
+
+        &:hover {
+            border: 1px solid #C7F801;
+        }
+    }
+}
+
+// Your one-step shop Ends
+// Life in the digital world Starts
+.life_digital {
+    background-color: #1B1F12;
+    background-image: url('../images/counterbg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// Life in the digital world Ends
