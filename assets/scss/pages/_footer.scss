@@ -1,0 +1,120 @@
+// Footer Section Starts
+.footer {
+    background-image: url("../images/footerbg.png");
+    &__decs {
+        &-subscribe {
+            form {
+                border: 1px solid rgba(var(--p6), 0.20);
+                background:rgba(var(--p6), 0.08);
+            }
+        }
+        input{
+            &::placeholder{
+                color:  rgba(255, 255, 255, 0.20);
+            }
+        }
+    }
+
+    &__discover {
+        .btn.show {
+            border: 1px solid rgba(var(--p2), 1);
+        }
+
+        .btn:first-child:active {
+            border: 1px solid rgba(var(--p2), 1);
+        }
+
+        &-nav {
+            ul {
+                li {
+                    margin-left: -15px;
+                    transition: var(--transition2);
+
+                    i {
+                        opacity: 0;
+                        transition: var(--transition2);
+                    }
+
+                    &:hover {
+                        padding-left: 10px;
+
+                        a {
+                            color: rgb(var(--p1));
+                        }
+
+                        i {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__community {
+        &-item {
+            ul {
+                li {
+                    margin-left: -15px;
+                    transition: var(--transition2);
+
+                    i {
+                        opacity: 0;
+                        transition: var(--transition2);
+                    }
+
+                    &:hover {
+                        a {
+                            color: rgb(var(--p1));
+                        }
+
+                        padding-left: 10px;
+
+                        i {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__hr {
+        color: rgba(var(--s2), 1);
+        margin-top: -13px;
+        width: 84%;
+
+        @include maxQuery(576) {
+            width: 100%;
+        }
+    }
+
+    &__social {
+        a {
+            i {
+                color: rgba(var(--db), 0.5);
+                transition: 0.3s linear;
+
+                &:hover {
+                    color: rgba(var(--db), 1);
+                }
+            }
+        }
+    }
+
+    &__tag {
+        ul {
+            margin-top: -1px;
+
+            li {
+                margin-top: 12px;
+            }
+        }
+    }
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+// Footer Section Ends
